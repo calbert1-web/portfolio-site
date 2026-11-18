@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Page Not Found | Camron Albert</title>
+  <script>
+    // GitHub Pages serves this page at the missing URL, which may be nested.
+    // Point relative links back to the repository root, even on a nested URL.
+    if (location.pathname.startsWith("/portfolio-site/") && location.protocol !== "file:") {
+      const base = document.createElement("base");
+      base.href = "/portfolio-site/";
+      document.head.append(base);
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body class="error-page">
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html"><span class="monogram" aria-hidden="true">CA</span> Camron Albert</a>
+    </div>
+  </header>
+  <main class="wrap error-main">
+    <section class="error-panel" aria-labelledby="error-title">
+      <div class="error-number" aria-hidden="true">404</div>
+      <div>
+        <p class="eyebrow">Error 404</p>
+        <h1 id="error-title">Page not found.</h1>
+        <p>The page may have moved, or the link might be out of date. You can get back to my portfolio below.</p>
+        <a class="button" href="index.html">Back to homepage <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner"><p>&copy; 2026 Camron Albert</p></div>
+  </footer>
+</body>
+</html>
